@@ -80,14 +80,23 @@
             top: 50px;
         }
 
-        .content-panel {
-            background-color: rgba(112, 112, 112, 0.7);
+        #ch1-content-panel {
+            background-color: rgba(237, 238, 243, 0.5);
+
         }
 
-        .content-panel:hover {
-            background-color: rgba(112, 112, 112, 1);
+
+        #ch1-content-panel:hover {
+            background-color: rgba(237, 238, 243, 1);
         }
 
+        #chapter3 {
+            background: linear-gradient(#313E57, #5E687E);
+            background: linear-gradient(to bottom, #313E57, #5E687E);
+            background: linear-gradient(180deg, #313E57, #5E687E);
+            background: linear-gradient(to top, #5E687E, #313E57);
+            background: linear-gradient(to bottom, #313E57 0%, #5E687E 100%);
+        }
 
         .slideanimate {
             visibility: hidden;
@@ -133,15 +142,15 @@
     <!-- 置右的navbar選單-->
     <div id="nav" class="nav">
         <ul>
-            <li><a href="#opening">前言</a></li>
+            <li><a href="#intro">前言</a></li>
             <li><a href="#chapter1">街賣的一天</a></li>
             <li><a href="#chapter2">求職困境</a></li>
             <li><a href="#chapter3">我國現狀</a></li>
-            <li><a href="#chapter4">我想不到還有什麼</a></li>
+            <li><a href="#chapter4">未來我們能</a></li>
         </ul>
     </div>
 
-    <!-- 首頁主視覺-->
+    <!-- opening 首頁主視覺 -->
     <div id="opening" class="jumbotron jumbotron-fluid text-center" style="background-image: url(); background-color: #1D2D43; background-size: cover; height: 100vh;">
         <div class="container">
             <h1 class="display-4" style="padding: 200px 20px 20px; color: aliceblue"><strong>網頁期末專題！</strong></h1>
@@ -151,7 +160,7 @@
     </div>
 
     <!-- 引言(想拆成兩頁做淡入淡出) -->
-    <div class="container-fluid" style="background-color: #252627; min-height: 100vh; padding: 40% 30%">
+    <div id="intro" data-spy="scroll" data-target="#nav" data-offset="0" class="container-fluid" style="background-color: #252627; min-height: 100vh; padding: 40% 30%">
         <div class="text-center">
             <div style="padding: 3px 20px; color: aliceblue; margin: 10vh auto">
                 <h4>
@@ -170,19 +179,20 @@
     <!-- 這邊可以再插ㄍ什麼東西 -->
 
 
+    <!-- chapter1街賣的一天 -->
     <!-- 這邊開始是橫向捲軸ㄉ部分！ -->
     <div id="chapter1" class="container-fluid" style="min-height: 1000vh;">
         <!-- 橫向捲軸部分的進度條！ -->
-        <div class="container-fluid sticky-top" style="background-color: #202338; min-height: 50px; z-index: 1000">
+        <div class="container-fluid sticky-top" style="background-color: #202338; min-height: 50px;">
             <div id="statusbar" style="position: absolute; left: 0; height: 50px; width: 0; background-color: #EFB841;"></div>
         </div>
         <!-- 橫向捲軸部分的橫頁內容！ -->
         <div class="sticky">
-            <div id="horizontal" style="height: 100vh; width: 1000vw; position: absolute; top: 0px; left: -192.541px;">
+            <div id="horizontal" style="height: 95vh; width: 1200vw; position: absolute; top: 0px; left: -192.541px;">
                 <div class="row">
                     <div class="col-2" style="height:100vh; background-color: #122A41">
                         <!-- 我想把字釘著啊啊啊啊 -->
-                        <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 50vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                        <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 50vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                             <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                             <p>
                                 <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -191,7 +201,7 @@
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #5E687E">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -201,7 +211,7 @@
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #AFCBF1">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉wd cuwoichgiwkcfw ucwgicgwiu<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -211,7 +221,7 @@
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #DFCF9D">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -221,7 +231,7 @@
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #D58F3F">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -231,7 +241,7 @@
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #B58E59">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -247,11 +257,11 @@
 
     <!-- 這邊可以再插ㄍ什麼東西 -->
 
-    <!-- 一些文字加圖 -->
-    <div id="chapter2" class="container-fluid" style="background-color: #313E57; min-height: 1000vh;">
+    <!-- chapter2求職困境 -->
+    <div id="chapter2" class="container-fluid" style="background-color: #313E57; min-height: 400vh;">
         <div class="row" style="padding: 10% 10%">
             <div class="col-sm-6" style="background-color: #313E57;">
-                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                <div id="ch2-content" style="color: aliceblue; padding: 20% 20%;">
                     <h3>找不到工作拉</h3>
                     <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
                 </div>
@@ -265,7 +275,7 @@
                 <!--<img src="asset/4-2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%"> -->
             </div>
             <div class="col-sm-6" style="background-color: #313E57;">
-                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                <div id="ch2-content" style="color: aliceblue; padding: 20% 20%;">
                     <h3>巴拉巴拉</h3>
                     <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
                 </div>
@@ -273,7 +283,7 @@
         </div>
         <div class="row" style="padding: 10% 10%">
             <div class="col-sm-6" style="background-color: #313E57;">
-                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                <div id="ch2-content" style="color: aliceblue; padding: 20% 20%;">
                     <h3>巴拉巴拉</h3>
                     <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
                 </div>
@@ -287,7 +297,7 @@
                 <!--<img src="asset/4-2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%"> -->
             </div>
             <div class="col-sm-6" style="background-color: #313E57;">
-                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                <div id="ch2-content" style="color: aliceblue; padding: 20% 20%;">
                     <h3>巴拉巴拉</h3>
                     <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
                 </div>
@@ -296,6 +306,57 @@
     </div>
 
 
+    <!-- chapter3我國現況 -->
+    <div id="chapter3" class="container-fluid" style="background-color: #5E687E; min-height: 1000vh;">
+        <!-- chapter3的小廢話 -->
+        <div class="container-fluid" style="min-height: 100vh">
+            <div class="ch3-content text-center" style="padding: 0% 5% 10% 5%; color: white">
+                <h2>這邊打點字like我國現況</h2>
+            </div>
+            <div class="ch3-content text-center" style="padding: 5% 20%; color: white">
+                <h6>這邊打點字like我國現況fnjo3iefhoiewbfv eojsvefbnjeiow ojbvweijab jobevojdjkvwbijfbwdjofbwjdf bjirwfidfowjdcnowkdjdbjkw bwejfokbwdjsifkbwd</h6>
+            </div>
+            <div class="ch3-content text-center" style="padding: 5% 20%; color: white">
+                <h6>這邊也打點字巴拉巴拉fnjo3iefhoiewbfv eojsvefbnjeiow ojbvweijab jobevojdjkvwbijfbwdjofbwjdf bjirwfidfowjdcnowkdjdbjkw bwejfokbwdjsifkbwd</h6>
+            </div>
+        </div>
+        <!-- chapter3的圖表說明 -->
+        <div class="row" style="min-height: 100vh; padding: 10% 10%;">
+            <div class="col-sm-6">
+                <div id="ch3-lb-content-panel" class="panel panel-default" style="color:white; padding: 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
+                    <h3 style="margin:0 auto; text-align: left;"><strong>這是一個亂做的圖表</strong></h3>
+                    <h5>
+                        <br><small>這裡可以解釋他</small>
+                        <br><small>但我在亂打字</small>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-sm-6 slideanimate" style=" padding: 5% 15% 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
+                <img src="asset-final/label-0.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;">
+                <p><small style="text-align: right; color: white">cwuiwuoidghiuwdgsijq sgcuhqwijdgxqu duqihwoidq uwgidiwa</small></p>
+            </div>
+
+        </div>
+        
+        <div class="row" style="min-height: 100vh; padding: 10% 10%;">
+            <div class="col-sm-6">
+                <div id="ch3-lb-content-panel" class="panel panel-default" style="color:white; padding: 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
+                    <h3 style="margin:0 auto; text-align: left;"><strong>這是一個亂做的圖表</strong></h3>
+                    <h5>
+                        <br><small>這裡可以解釋他</small>
+                        <br><small>但我在亂打字</small>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-sm-6 slideanimate" style=" padding: 5% 15% 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
+                <img src="asset-final/label-0.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;">
+                <p><small style="text-align: right; color: white">cwuiwuoidghiuwdgsijq sgcuhqwijdgxqu duqihwoidq uwgidiwa</small></p>
+            </div>
+
+        </div>
+        
+
+    </div>
 
 
 
