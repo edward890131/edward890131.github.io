@@ -80,11 +80,14 @@
             top: 50px;
         }
 
-        div.sticky-2 {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 100px;
+        .content-panel {
+            background-color: rgba(112, 112, 112, 0.7);
         }
+
+        .content-panel:hover {
+            background-color: rgba(112, 112, 112, 1);
+        }
+
 
         .slideanimate {
             visibility: hidden;
@@ -141,8 +144,8 @@
     <!-- 首頁主視覺-->
     <div id="opening" class="jumbotron jumbotron-fluid text-center" style="background-image: url(); background-color: #1D2D43; background-size: cover; height: 100vh;">
         <div class="container">
-            <h1 class="display-4" style="padding: 200px 20px 20px; color: aliceblue">網頁期末專案！</h1>
-            <h5 class="display-4" style="color: aliceblue">打什麼好ㄋ</h5>
+            <h1 class="display-4" style="padding: 200px 20px 20px; color: aliceblue"><strong>網頁期末專題！</strong></h1>
+            <h6 class="display-4" style="color: aliceblue">打什麼好ㄋ</h6>
             <p class="lead" style="padding: 3px 20px; color: aliceblue">隨便亂打好惹（旁邊的nav想做監聽但我做不出來嗚嗚）</p>
         </div>
     </div>
@@ -150,16 +153,18 @@
     <!-- 引言(想拆成兩頁做淡入淡出) -->
     <div class="container-fluid" style="background-color: #252627; min-height: 100vh; padding: 40% 30%">
         <div class="text-center">
-            <div style="padding: 3px 20px; color: aliceblue; margin: 10% 0%">
-                <h4>你我定曾看過坐著輪椅賣口香糖、刮刮樂的伯伯.......</h4>
+            <div style="padding: 3px 20px; color: aliceblue; margin: 10vh auto">
+                <h4>
+                    <samll>你我定曾看過坐著輪椅賣口香糖、刮刮樂的伯伯.......</samll>
+                </h4>
             </div>
-            <div style="padding: 3px 20px; color: aliceblue; margin: 10% 0%">
-                <h4>但你可曾想過，他們的一天又是如何呢......
-                (這邊我想拆成兩頁做淡入淡出但我也還要看一下怎嗎做嗚嗚嗚）</h4>
+            <div style="padding: 3px 20px; color: aliceblue; margin: 10vh auto">
+                <h4><small>但你可曾想過，他們的一天又是如何呢......
+                        (這邊我想拆成兩頁做淡入淡出但我也還要看一下怎嗎做嗚嗚嗚）</small></h4>
             </div>
         </div>
     </div>
-    
+
 
 
     <!-- 這邊可以再插ㄍ什麼東西 -->
@@ -176,34 +181,62 @@
             <div id="horizontal" style="height: 100vh; width: 1000vw; position: absolute; top: 0px; left: -192.541px;">
                 <div class="row">
                     <div class="col-2" style="height:100vh; background-color: #122A41">
-                       <!-- 我想把字釘著啊啊啊啊 -->
-                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
-                            <p>這邊我想把字釘著啊啊啊啊 sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        <!-- 我想把字釘著啊啊啊啊 -->
+                        <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 50vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
+                            <p>
+                                <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
+                            </p>
                         </div>
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #5E687E">
-                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
-                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
+                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                                <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
+                                <p>
+                                    <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #AFCBF1">
-                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
-                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
+                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                                <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
+                                <p>
+                                    <br>而且我做的hover跑去哪裡了拉拉wd cuwoichgiwkcfw ucwgicgwiu<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-2" style="height:100vh; background-color: #F9F6EE">
-                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
-                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                    <div class="col-2" style="height:100vh; background-color: #DFCF9D">
+                        <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
+                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                                <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
+                                <p>
+                                    <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #D58F3F">
-                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
-                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
+                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                                <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
+                                <p>
+                                    <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-2" style="height:100vh; background-color: #B58E59">
-                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
-                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
+                            <div id="content-panel" class="panel panel-default" style="background-color: #EDEEF3; color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                                <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
+                                <p>
+                                    <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
+                                </p>
+                            </div>
                         </div>
                     </div>
 
