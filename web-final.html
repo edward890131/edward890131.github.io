@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/web-final.css">
+
+
+    <style>
+        #nav {
+            top: 0px;
+            padding: 0 0 0 96vw;
+            width: 3vw;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .nav {
+            font-size: 14px;
+            height: 20vh;
+            width: 3vw;
+            font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+            z-index: 1000;
+        }
+
+        .nav ul {
+            margin: 0;
+            padding: 0;
+            border-top: none;
+            height: 20vh;
+            width: 4vw;
+            z-index: 999;
+        }
+
+        .nav li {
+            margin-bottom: 0px;
+            border-bottom: none;
+            background-color: rgba(1, 1, 1, 0.5);
+            border-left: solid 1px white;
+            list-style-type: none;
+            /*    float: left;*/
+            width: 4vw;
+            height: 20vh;
+            z-index: 99;
+        }
+
+        .nav li a {
+            padding: 1px 1px;
+            display: block;
+            width: auto;
+            line-height: 3;
+            border-left: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            writing-mode: vertical-lr;
+            height: 20vh;
+            letter-spacing: 3px;
+        }
+
+        .nav li.first a {
+            border-left: none;
+        }
+
+        .nav li a:hover {
+            color: #D2AF59;
+            background-color: white;
+            width: 4vw;
+            height: 20vh;
+        }
+
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 50px;
+        }
+
+        div.sticky-2 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 100px;
+        }
+
+        .slideanimate {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+    </style>
+
+    <title>網頁期末專題：身障街賣者</title>
+</head>
+
+<body>
+    <!-- 置右的navbar選單-->
+    <div id="nav" class="nav">
+        <ul>
+            <li><a href="#opening">前言</a></li>
+            <li><a href="#chapter1">街賣的一天</a></li>
+            <li><a href="#chapter2">求職困境</a></li>
+            <li><a href="#chapter3">我國現狀</a></li>
+            <li><a href="#chapter4">我想不到還有什麼</a></li>
+        </ul>
+    </div>
+
+    <!-- 首頁主視覺-->
+    <div id="opening" class="jumbotron jumbotron-fluid text-center" style="background-image: url(); background-color: #1D2D43; background-size: cover; height: 100vh;">
+        <div class="container">
+            <h1 class="display-4" style="padding: 200px 20px 20px; color: aliceblue">網頁期末專案！</h1>
+            <h5 class="display-4" style="color: aliceblue">打什麼好ㄋ</h5>
+            <p class="lead" style="padding: 3px 20px; color: aliceblue">隨便亂打好惹（旁邊的nav想做監聽但我做不出來嗚嗚）</p>
+        </div>
+    </div>
+
+    <!-- 引言(想拆成兩頁做淡入淡出) -->
+    <div class="container-fluid" style="background-color: #252627; min-height: 100vh; padding: 40% 30%">
+        <div class="text-center">
+            <div style="padding: 3px 20px; color: aliceblue; margin: 10% 0%">
+                <h4>你我定曾看過坐著輪椅賣口香糖、刮刮樂的伯伯.......</h4>
+            </div>
+            <div style="padding: 3px 20px; color: aliceblue; margin: 10% 0%">
+                <h4>但你可曾想過，他們的一天又是如何呢......
+                (這邊我想拆成兩頁做淡入淡出但我也還要看一下怎嗎做嗚嗚嗚）</h4>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- 這邊可以再插ㄍ什麼東西 -->
+
+
+    <!-- 這邊開始是橫向捲軸ㄉ部分！ -->
+    <div id="chapter1" class="container-fluid" style="min-height: 1000vh;">
+        <!-- 橫向捲軸部分的進度條！ -->
+        <div class="container-fluid sticky-top" style="background-color: #202338; min-height: 50px; z-index: 1000">
+            <div id="statusbar" style="position: absolute; left: 0; height: 50px; width: 0; background-color: #EFB841;"></div>
+        </div>
+        <!-- 橫向捲軸部分的橫頁內容！ -->
+        <div class="sticky">
+            <div id="horizontal" style="height: 100vh; width: 1000vw; position: absolute; top: 0px; left: -192.541px;">
+                <div class="row">
+                    <div class="col-2" style="height:100vh; background-color: #122A41">
+                       <!-- 我想把字釘著啊啊啊啊 -->
+                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
+                            <p>這邊我想把字釘著啊啊啊啊 sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        </div>
+                    </div>
+                    <div class="col-2" style="height:100vh; background-color: #5E687E">
+                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
+                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        </div>
+                    </div>
+                    <div class="col-2" style="height:100vh; background-color: #AFCBF1">
+                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
+                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        </div>
+                    </div>
+                    <div class="col-2" style="height:100vh; background-color: #F9F6EE">
+                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
+                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        </div>
+                    </div>
+                    <div class="col-2" style="height:100vh; background-color: #D58F3F">
+                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
+                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        </div>
+                    </div>
+                    <div class="col-2" style="height:100vh; background-color: #B58E59">
+                        <div class="sticky-2" style="color: aliceblue; padding:  15% 10% 10% 10%; width: 20%">
+                            <p>cwhidfuwgdfowhvo sucsicbvsucvhsjhcakhc dhcsjvcsjocjsbc hdiowohios</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 這邊可以再插ㄍ什麼東西 -->
+
+    <!-- 一些文字加圖 -->
+    <div id="chapter2" class="container-fluid" style="background-color: #313E57; min-height: 1000vh;">
+        <div class="row" style="padding: 10% 10%">
+            <div class="col-sm-6" style="background-color: #313E57;">
+                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                    <h3>找不到工作拉</h3>
+                    <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
+                </div>
+            </div>
+            <div class="col-sm-6 slideanimate" style="background-color: #F7DB98;">
+                <!--<img src="asset/4-2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%"> -->
+            </div>
+        </div>
+        <div class="row" style="padding: 10% 10%">
+            <div class="col-sm-6 slideanimate" style="background-color: #F7DB98;">
+                <!--<img src="asset/4-2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%"> -->
+            </div>
+            <div class="col-sm-6" style="background-color: #313E57;">
+                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                    <h3>巴拉巴拉</h3>
+                    <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding: 10% 10%">
+            <div class="col-sm-6" style="background-color: #313E57;">
+                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                    <h3>巴拉巴拉</h3>
+                    <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
+                </div>
+            </div>
+            <div class="col-sm-6 slideanimate" style="background-color: #F7DB98;">
+                <!--<img src="asset/4-2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%"> -->
+            </div>
+        </div>
+        <div class="row" style="padding: 10% 10%">
+            <div class="col-sm-6 slideanimate" style="background-color: #F7DB98;">
+                <!--<img src="asset/4-2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%"> -->
+            </div>
+            <div class="col-sm-6" style="background-color: #313E57;">
+                <div id="content" style="color: aliceblue; padding: 20% 20%;">
+                    <h3>巴拉巴拉</h3>
+                    <p>cwjocvhuwjfgv ciefhvjsdckwdjkcjwdckjsa ckamsxcgkasgci kjwgdbiuckjwgdicuwguhhcw dcjkajshcuiwhd uiwhdiuwhdciuqsc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+        //#chapter1 的進度條 statusbar
+        $(window).scroll(function() {
+            var chapter1_pos = $("#chapter1").offset().top; //#chapter1現在的位置
+            var chapter1_height = $("#chapter1").height(); //#chapter1的高度
+            var max_scroll = chapter1_height - $(window).height(); //最大可捲距離＝#chapter1高度－視窗高度
+            var window_width = $(window).width(); //視窗寬度
+            var scroll = $(window).scrollTop(); //捲動多少
+            var chapter1_scrolled = scroll - chapter1_pos;
+            //在#chapter1裡面被捲動的距離＝最大可捲距離－ #chapter1現在的位置(希望他可以跑到最上面開始動)
+            var new_width = window_width * chapter1_scrolled / max_scroll;
+            //statusbar的新寬度＝視窗寬度＊捲動多少／最大可捲距離
+            if (chapter1_scrolled > 0 && chapter1_scrolled < chapter1_height) {
+                $('#statusbar').css({
+                    'width': new_width
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        //#chapter1橫向捲軸
+        $(window).scroll(function() {
+            var current_pos = $(document).scrollTop(); //滑動了整個頁面多少
+            var winw = $(window).width(); //螢幕寬度
+            var chapter1_height = $("#chapter1").height(); //#chapter1的高度
+            var chapter1_pos = $("#chapter1").offset().top; //#chapter1現在的位置
+            console.log(current_pos + "/" + chapter1_pos);
+            if (current_pos > chapter1_pos && current_pos <= chapter1_pos + chapter1_height) {
+                update_left = (-1) * ($("#horizontal").width() - winw) * (current_pos - chapter1_pos) / chapter1_height;
+                console.log(update_left);
+                $("#horizontal").css("left", update_left);
+            }
+        });
+    </script>
+
+    <script>
+        //往右滑的slideanimation
+        $(function() {
+            $(window).scroll(function() {
+                $(".slideanimate-2").each(function() {
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    var winh = $(window).height();
+                    if (pos - winh / 2 < winTop) {
+                        $(this).addClass("slide-2");
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        //往上滑的slideanimation
+        $(function() {
+            $(window).scroll(function() {
+                $(".slideanimate").each(function() {
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    var winh = $(window).height();
+                    if (pos - winh / 2 < winTop) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body></html>
