@@ -77,8 +77,14 @@
         div.sticky {
             position: -webkit-sticky;
             position: sticky;
-            top: 50px;
+            top: 5vh;
         }
+
+        #story-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
 
         #ch1-content-panel {
             background-color: rgba(237, 238, 243, 0.5);
@@ -133,43 +139,43 @@
                 -webkit-transform: translateY(0%);
             }
         }
+
     </style>
 
-    <title>網頁期末專題：身障街賣者</title>
+    <title>薛西弗斯的化身　被結構詛咒的身障街賣者們</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav">
     <!-- 置右的navbar選單-->
     <div id="nav" class="nav">
         <ul>
             <li><a href="#intro">前言</a></li>
             <li><a href="#chapter1">街賣的一天</a></li>
-            <li><a href="#chapter2">求職困境</a></li>
-            <li><a href="#chapter3">我國現狀</a></li>
+            <li><a href="#chapter2">關於邱大哥</a></li>
+            <li><a href="#chapter3">數據與法規</a></li>
             <li><a href="#chapter4">未來我們能</a></li>
         </ul>
     </div>
 
     <!-- opening 首頁主視覺 -->
-    <div id="opening" class="jumbotron jumbotron-fluid text-center" style="background-image: url(); background-color: #1D2D43; background-size: cover; height: 100vh;">
-        <div class="container">
-            <h1 class="display-4" style="padding: 200px 20px 20px; color: aliceblue"><strong>網頁期末專題！</strong></h1>
-            <h6 class="display-4" style="color: aliceblue">打什麼好ㄋ</h6>
-            <p class="lead" style="padding: 3px 20px; color: aliceblue">隨便亂打好惹（旁邊的nav想做監聽但我做不出來嗚嗚）</p>
+    <div id="opening" class="jumbotron jumbotron-fluid text-center" style="background-image: url(asset-final/opening.JPG); background-color: #1D2D43; background-size: cover; height: 100vh;">
+        <div class="container" style="padding-right: 7vw">
+            <h1 class="display-4" style="padding-top: 200px; padding-left: 15px; padding-right: 20px; padding-bottom: 40px; color: aliceblue"><strong>薛西弗斯的化身</strong></h1>
+            <h3 class="display-4" style="padding-top: : 40px; padding-left: 15px; padding-right: 20px; padding-bottom: 40px;color: aliceblue"><strong>被結構詛咒的身障街賣者們</strong></h3>
+            <p class="lead" style="padding-top: : 40px; padding-left: 15px; padding-right: 20px; color: aliceblue">身障者街賣者被忽視的勞權，真正無障礙的社會遙不可及</p>
         </div>
     </div>
 
     <!-- 引言(想拆成兩頁做淡入淡出) -->
-    <div id="intro" data-spy="scroll" data-target="#nav" data-offset="0" class="container-fluid" style="background-color: #252627; min-height: 100vh; padding: 40% 30%">
-        <div class="text-center">
-            <div style="padding: 3px 20px; color: aliceblue; margin: 10vh auto">
+    <div id="intro" class="container-fluid" style="background-color: #252627; min-height: 100vh; padding: 30% 30%">
+        <div class="text-center" style="padding-right: 7vw">
+            <div style="padding: 3px 20px; color: aliceblue; margin: 5vh auto">
                 <h4>
-                    <samll>你我定曾看過坐著輪椅賣口香糖、刮刮樂的伯伯.......</samll>
+                    <small>你我定曾看過夜市、街頭、學校坐著輪椅賣口香糖、刮刮樂的伯伯.......</small>
                 </h4>
             </div>
-            <div style="padding: 3px 20px; color: aliceblue; margin: 10vh auto">
-                <h4><small>但你可曾想過，他們的一天又是如何呢......
-                        (這邊我想拆成兩頁做淡入淡出但我也還要看一下怎嗎做嗚嗚嗚）</small></h4>
+            <div style="padding: 3px 20px; color: aliceblue; margin: 5vh auto">
+                <h4><small>你了解口香糖背後的故事嗎？他們是從哪裡來？而現在又面臨了什麼困境呢......</small></h4>
             </div>
         </div>
     </div>
@@ -183,25 +189,25 @@
     <!-- 這邊開始是橫向捲軸ㄉ部分！ -->
     <div id="chapter1" class="container-fluid" style="min-height: 1000vh;">
         <!-- 橫向捲軸部分的進度條！ -->
-        <div class="container-fluid sticky-top" style="background-color: #202338; min-height: 50px;">
-            <div id="statusbar" style="position: absolute; left: 0; height: 50px; width: 0; background-color: #EFB841;"></div>
+        <div class="container-fluid sticky-top" style="background-color: #202338; min-height: 5vh;">
+            <div id="statusbar" style="position: absolute; left: 0; height: 5vh; width: 0; background-color: #EFB841;"></div>
         </div>
         <!-- 橫向捲軸部分的橫頁內容！ -->
         <div class="sticky">
             <div id="horizontal" style="height: 95vh; width: 1200vw; position: absolute; top: 0px; left: -192.541px;">
                 <div class="row">
-                    <div class="col-2" style="height:100vh; background-color: #122A41">
+                    <div id="story-img" class="col-1" style="height:100vh; background-color: #122A41; background-image: url(asset-final/story1.JPG)">
                         <!-- 我想把字釘著啊啊啊啊 -->
-                        <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 50vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                        <div id="ch1-content-panel" class="panel panel-default" style="color: aliceblue; margin-top: 50vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                             <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                             <p>
                                 <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
                             </p>
                         </div>
                     </div>
-                    <div class="col-2" style="height:100vh; background-color: #5E687E">
+                    <div id="story-img" class="col-1" style="height:100vh; background-color: #5E687E; background-image: url(asset-final/story2.JPG)">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: aliceblue; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -209,9 +215,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2" style="height:100vh; background-color: #AFCBF1">
+                    <div id="story-img" class="col-1" style="height:100vh; background-color: #AFCBF1;background-image: url(asset-final/story3.JPG)">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: aliceblue; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉wd cuwoichgiwkcfw ucwgicgwiu<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -219,9 +225,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2" style="height:100vh; background-color: #DFCF9D">
+                    <div id="story-img" class="col-1" style="height:100vh; background-color: #DFCF9D; background-image: url(asset-final/story4.JPG)">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: aliceblue; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -229,9 +235,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2" style="height:100vh; background-color: #D58F3F">
+                    <div id="story-img" class="col-1" style="height:100vh; background-color: #D58F3F; background-image: url(asset-final/story5.JPG)">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: aliceblue; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -239,9 +245,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2" style="height:100vh; background-color: #B58E59">
+                    <div id="story-img" class="col-1" style="height:100vh; background-color: #B58E59; background-image: url(asset-final/story6.png)">
                         <div style="color: aliceblue; padding-top: 40vh; padding-left: 20vh; width: 30vw">
-                            <div id="ch1-content-panel" class="panel panel-default" style="color: #122A41; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
+                            <div id="ch1-content-panel" class="panel panel-default" style="color: aliceblue; margin-top: 10vh; margin-left: 80vh; width: 40vw; padding: 5vh 5vh">
                                 <p style="margin:0 auto; text-align: left;"><strong>我想把字釘著啊啊啊啊</strong></p>
                                 <p>
                                     <br>而且我做的hover跑去哪裡了拉拉<br>nvowfiwonievowhdo boucbwodjcwjbclwsdwqjbdj wbdkwbdjkbwd cuwoichgiwkcfw ucwgicgwiu
@@ -257,7 +263,7 @@
 
     <!-- 這邊可以再插ㄍ什麼東西 -->
 
-    <!-- chapter2求職困境 -->
+    <!-- chapter2 關於邱大哥 -->
     <div id="chapter2" class="container-fluid" style="background-color: #313E57; min-height: 400vh;">
         <div class="row" style="padding: 10% 10%">
             <div class="col-sm-6" style="background-color: #313E57;">
@@ -306,10 +312,10 @@
     </div>
 
 
-    <!-- chapter3我國現況 -->
+    <!-- chapter3 數據與法規 -->
     <div id="chapter3" class="container-fluid" style="background-color: #5E687E; min-height: 1000vh;">
         <!-- chapter3的小廢話 -->
-        <div class="container-fluid" style="min-height: 100vh">
+        <div class="container-fluid" style="min-height: 100vh; style=" padding-right: 7vw"">
             <div class="ch3-content text-center" style="padding: 0% 5% 10% 5%; color: white">
                 <h2>這邊打點字like我國現況</h2>
             </div>
@@ -337,7 +343,7 @@
             </div>
 
         </div>
-        
+
         <div class="row" style="min-height: 100vh; padding: 10% 10%;">
             <div class="col-sm-6">
                 <div id="ch3-lb-content-panel" class="panel panel-default" style="color:white; padding: 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
@@ -354,12 +360,19 @@
             </div>
 
         </div>
-        
+
 
     </div>
 
 
-
+    <!-- chapter4 未來我們能 -->
+    <div  id="footer" class="row" style="background-color:black; min-height: 40vh; padding: 10vh 10vw">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 align-self-center">
+            <p1 style="font-size:15px;text-align: center; color: aliceblue;"><br><br>製作團隊：黃適敏 陳品儒 楊鎮瑜<br><br>採訪與文字：黃適敏 陳品儒<br><br>設計：楊鎮瑜<br><br>網頁：楊鎮瑜<br><br>Copyright © 2020臺大新聞所. All rights reserved. 版權所有，禁止擅自轉貼節錄<br><br></p1>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
 
 
 
@@ -389,6 +402,7 @@
                 });
             }
         });
+
     </script>
 
 
@@ -406,6 +420,7 @@
                 $("#horizontal").css("left", update_left);
             }
         });
+
     </script>
 
     <script>
@@ -422,6 +437,7 @@
                 });
             });
         });
+
     </script>
 
     <script>
@@ -438,6 +454,7 @@
                 });
             });
         });
+
     </script>
 
 
@@ -449,4 +466,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
