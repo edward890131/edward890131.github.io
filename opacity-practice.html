@@ -10,27 +10,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <style>
-       .earth-img {
+        .intro-img {
             position: fixed;
             height: 100%;
+            width: 100%;
             object-fit: cover;
-            /*              object-position: right;*/
             opacity: 1;
         }
-
-
     </style>
 
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <div style="height:300vh;">
+    <div id="intro " style="height:300vh;">
         <div style="height:300vh;">
-        <img src="asset-final/day1.JPG" class="opa img-fluid earth-img" data-seq=1 style="z-index:99;">
-        <img src="asset-final/day2.JPG" class="opa img-fluid earth-img" data-seq=2 style="z-index:98;">
-        <img src="asset-final/day3.JPG" class="opa img-fluid earth-img" data-seq=3 style="z-index:97;">
-       
+            <img src="asset-final/intro1.jpg" class="opa img-fluid intro-img" data-seq=1 style="z-index:99;">
+            <img src="asset-final/intro2.jpg" class="opa img-fluid intro-img" data-seq=2 style="z-index:98;">
+            <img src="asset-final/intro3.jpg" class="opa img-fluid intro-img" data-seq=3 style="z-index:97;">
+        </div>
     </div>
 
     <div style="height:100vh;background-color: #333"></div>
@@ -49,7 +47,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
 
-   
+
     <script>
         $(window).scroll(function() {
             var scrolled = $(document).scrollTop();
@@ -60,9 +58,6 @@
                     "opacity": ($(this).data("seq") * opRange - scrolled) / opRange
                 });
             });
-            
-            
-           
         });
     </script>
 
