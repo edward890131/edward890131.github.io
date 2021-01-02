@@ -106,6 +106,7 @@
             top: 5vh;
         }
 
+
         #story-img {
             background-size: cover;
             background-repeat: no-repeat;
@@ -128,6 +129,17 @@
             box-shadow: 2px 2px 10px #1D2D43;
             color: black;
             float: left;
+
+        }
+
+        #chapter2-end {
+            height: 200vh;
+            color: aliceblue;
+            background: linear-gradient(black, #3B445A);
+            background: linear-gradient(to bottom, black, #3B445A);
+            background: linear-gradient(180deg, black, #3B445A);
+            background: linear-gradient(to top, #3B445A, black);
+            background: linear-gradient(to bottom, black 0%, #3B445A 100%);
 
         }
 
@@ -254,26 +266,32 @@
         <!-- 這邊可以再插ㄍ什麼東西 -->
 
         <!-- chapter1 街賣的一天 -->
-        <div id="chapter1" class="container-fluid" style="background-color: #313E57; min-height: 250vh;padding-right: 7vw">
-            <div id="ch-title" class="text-center">
+        <div id="chapter1" class="container-fluid" style="background-color: #313E57; min-height: 280vh;padding-right: 7vw">
+            <div id="ch-title" class="text-center" style="padding-top: 5%">
                 <h1><strong>街賣的一天</strong></h1>
             </div>
-            <div class="row text-center" style="padding-left: 5%;padding-right: 5%; padding-top: 10%; padding-bottom: 5%;">
-                <h6 style="color: aliceblue; padding: 5% 10%; min-width: 100%">騎電動輪椅到板橋，再轉車搭到景安或永安市場，有時候也會到府中在轉車。</h6>
-                <div class="col-sm-4" style="background-color: #313E57;">
+            <div style="float: right">
+                <img src="asset-final/logo.png" style="width: 40%; margin-top: 4%; margin-left: 30%">
+            </div>
+            <div>
+                <h5 class="text-center" style="color: aliceblue; padding: 5% 10%; min-width: 100%">騎電動輪椅到板橋，再轉車搭到景安或永安市場，有時候也會到府中在轉車。</h5>
+            </div>
+            <div class="row text-center" style="padding-left: 5%;padding-right: 5%; padding-top: 5%; padding-bottom: 5%;">
+
+                <div class="col-sm-4" style="background-color: rgba(49, 62, 87, 0.3)">
                     <div id="ch1-content">
                         <h5>著裝、準備街賣商品</h5>
                         <p>12:00離開浮洲協會</p>
                     </div>
                 </div>
-                <div class="col-sm-4" style="background-color: #313E57;">
+                <div class="col-sm-4" style="background-color: rgba(49, 62, 87, 0.3)">
                     <div id="ch1-content">
                         <h5>15:30左右休息一小時</h5>
                         <p>17:00後下班人潮聚集</p>
 
                     </div>
                 </div>
-                <div class="col-sm-4" style="background-color: #313E57;">
+                <div class="col-sm-4" style="background-color: rgba(49, 62, 87, 0.3)">
                     <div id="ch1-content">
                         <h5>人潮散去收拾商品</h5>
                         <p>20:00後回浮洲協會</p>
@@ -283,22 +301,22 @@
             </div>
 
             <div class="row" style="padding-left: 5%;padding-right: 5%; padding-bottom: 15%">
-                <div class="col-sm-4 slideanimate">
+                <div id="img" class="col-sm-4 slideanimate">
                     <!-- style="background-color: #F7DB98;" -->
-                    <img src="asset-final/day1.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%">
+                    <img src="asset-final/day1.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%; box-shadow: 2px 2px 10px #1D2D43;">
                 </div>
-                <div class="col-sm-4 slideanimate">
-                    <img src="asset-final/day3.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%">
+                <div id="img" class="col-sm-4 slideanimate">
+                    <img src="asset-final/day3.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%; box-shadow: 2px 2px 10px #1D2D43;">
                 </div>
-                <div class="col-sm-4 slideanimate">
-                    <img src="asset-final/day4.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%">
+                <div id="img" class="col-sm-4 slideanimate">
+                    <img src="asset-final/day4.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%; box-shadow: 2px 2px 10px #1D2D43;">
                 </div>
             </div>
 
 
             <div class="row" style="padding: 5% 5%">
-                <div class="col-sm-6 slideanimate" style="padding-top: 1%">
-                    <img src="asset-final/day2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;">
+                <div id="img" class="col-sm-6 slideanimate" style="padding-top: 1%">
+                    <img src="asset-final/day2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%; box-shadow: 2px 2px 10px #1D2D43;">
                 </div>
                 <div class="col-sm-6" style="background-color: #313E57;">
                     <div id="ch1-content-2" style="color: aliceblue;padding: 5% 10%;background-color: rgba(242, 242, 242, 0.1);box-shadow: 2px 2px 10px #1D2D43;">
@@ -325,7 +343,7 @@
                 <div id="horizontal" style="height: 95vh; width: 1200vw; position: absolute; top: 0px; left: -192.541px;">
                     <div class="row">
                         <div id="story-img" class="col-1" style="height:100vh; background-color: #122A41; background-image: url(asset-final/story1.png)">
-                            <div id="st-title">
+                            <div id="st-title" style="">
                                 <h1><strong>關於邱大哥</strong></h1>
                             </div>
                             <div id="ch2-content-panel" class="panel panel-default" style="color: black; margin-top:5vh; margin-left: 10vh; width: 35vw; padding: 5vh 5vh">
@@ -337,10 +355,10 @@
                             </div>
                             <div id="ch2-content-panel" class="panel panel-default" style="color: black; margin-top:35vh; margin-left: 35vh; width: 35vw; padding: 5vh 5vh">
                                 <p>
-                                    <br>嚐遍生命中的酸甜苦辣，５０多年次的邱大哥是嘉義人。１５歲隻身來到台北半工半讀，兩年內存到人生的第一桶金。
+                                    <br>嚐遍生命中的酸甜苦辣，50多年次的邱大哥是嘉義人。15歲隻身來到台北半工半讀，兩年內存到人生的第一桶金。
                                     而後他也曾開店當老闆，多年前到中國大陸經商。
                                     <br>
-                                    <br>然而，六年前他卻因胸椎感染病毒未及時就醫，在緊急動刀清創後下半身幾乎完全癱瘓。
+                                    <br>然而，<strong style=" background: rgba(239, 184, 65, 0.5)">六年前他卻因胸椎感染病毒未及時就醫，在緊急動刀清創後下半身幾乎完全癱瘓</strong>。
                                 </p>
                             </div>
                         </div>
@@ -352,7 +370,7 @@
                             <div id="ch2-content-panel" class="panel panel-default" style="color: black; margin-top:0vh; margin-left: 50vh; width: 40vw; padding: 5vh 5vh">
                                 <p>
                                     <br>經過急救後的邱大哥在清醒時才發現下半身無法施力，甚至完全失去知覺。在難耐的衝動、絕望之下，他一口氣吞了６０顆安眠藥，所幸被及時發現，救回了人生的第二條命。<br>
-                                    <br>「清醒後我劈頭就問：『我為什麼沒死？為什麼要救我？』，社工跟我講了一堆大道理，我跟他說：「你說的我都懂，但你永遠無法去體會一個昨天還能走路的人，隔天醒來下半身完全癱瘓是什麼感覺』」<br>
+                                    <br>「清醒後我劈頭就問：<strong style=" background: rgba(239, 184, 65, 0.5)">『我為什麼沒死？為什麼要救我？』</strong>，社工跟我講了一堆大道理，我跟他說：「你說的我都懂，但你永遠無法去體會一個昨天還能走路的人，隔天醒來下半身完全癱瘓是什麼感覺』」<br>
                                     <br>「有次我要去超商買東西，有個女大學生好心地要幫我推輪椅進去。但我的右腳掉到地上，一路磨進店裡，」邱大哥苦笑著回憶著剛出院的日子：「進到店裡看到地上一攤血，還嚇壞了店員，我這才發現我的腳趾已經磨到看得見骨頭。」
                                 </p>
                             </div>
@@ -365,7 +383,7 @@
                                 <p>
                                     <br>由於初期的日常起居亟需他人照護，邱大哥在術後曾在所費不貲的護理之家自費待了兩年，然而花光了全身積蓄，只好社會局的轉介下到了三重的護理之家，一待就是三年。<br>
                                     <br>雖然社會局轉介後的護理之家不須支付額外費用，邱大哥卻也因此無法申請低收入戶和身心障礙補助——所幸當時由於剛動完刀，仍能請領約五千元的重症身障補助。然而，一年後他卻也因為身份從重度轉為中度，之後的兩年都無法繼續請領。<br>
-                                    <br>「去年年底邱大哥在網路上查到三重有個媒介身障者工作的地方，在前往後被轉介到一家身心障礙者的庇護工廠。然而，抵達後他才發現工廠主要以照顧心智障礙者為主，此外，門口前設有三層階梯，「工廠沒有無障礙設施，我連門都進不了」。
+                                    <br>「去年年底邱大哥在網路上查到三重有個媒介身障者工作的地方，在前往後被轉介到一家身心障礙者的庇護工廠。然而，抵達後他才發現工廠主要以照顧心智障礙者為主，此外，門口前設有三層階梯，<strong style=" background: rgba(239, 184, 65, 0.5)">「工廠沒有無障礙設施，我連門都進不了」</strong>。
                                 </p>
                             </div>
                         </div>
@@ -373,7 +391,7 @@
                             <div id="ch2-content-panel" class="panel panel-default" style="color: black; margin-top:10vh; margin-left: 20vh; width: 40vw; padding: 5vh 5vh">
                                 <p>
                                     <br>有次他來到桃園某協助身障者自立工作的基金會，卻因為協會本身不提供住宿——他若要搭乘復康巴士來回台北，一天至少要七百塊的交通費——當時連手機費都繳不出來的邱大哥，只好婉拒了這份工作機會。<br>
-                                    <br>後來邱大哥得知協助身障者的新巨輪協會不僅能幫助他自立街賣工作，也能提供他最需要的住宿。雙掌因為手推輪椅而長了一層厚繭的邱大哥，也在獲贈電動輪椅後更能方便地移動。
+                                    <br>後來邱大哥得知協助身障者的<strong style=" background: rgba(239, 184, 65, 0.5)">新巨輪協會</strong>不僅能幫助他自立街賣工作，也能提供他最需要的住宿。雙掌因為手推輪椅而長了一層厚繭的邱大哥，也在獲贈電動輪椅後更能方便地移動。
                                 </p>
                             </div>
                         </div>
@@ -385,16 +403,16 @@
                                 <p>
                                     <br>「一開始街賣有點過不去，因為跟以前的生活差距太大了。」<br>
                                     <br>來到協會開始街賣工作，要隻身坐著輪椅上街頭、面對許多陌生人群，邱大哥必須重新調適心態，「我現在什麼都不是，就是個身障者。這些年我的心態真的轉變了很多，如果沒有轉變，也不可能出來街賣」。<br>
-                                    <br>然而，街頭巷尾間他人的眼光卻不盡友善。「有時候看到歧視的眼光也會覺得，唉，為什麼會用這樣的眼光來看我？過去有很多假身障的人出去騙錢，有些人可能覺得以前被騙了所以才這樣看我，其實對我們這些真正身障的人並不了解。」
+                                    <br>然而，街頭巷尾間他人的眼光卻不盡友善。「有時候看到歧視的眼光也會覺得，唉，為什麼會用這樣的眼光來看我？過去有很多假身障的人出去騙錢，有些人可能覺得以前被騙了所以才這樣看我，<strong style=" background: rgba(239, 184, 65, 0.5)">其實對我們這些真正身障的人並不了解</strong>。」
                                 </p>
                             </div>
                         </div>
                         <div id="story-img" class="col-1" style="height:100vh; background-color: #AFCBF1;background-image: url(asset-final/story6.png)">
                             <div id="ch2-content-panel" class="panel panel-default" style="color: black; margin-top:25vh; margin-left: 100vh; width: 40vw; padding: 5vh 5vh">
                                 <p>
-                                    <br>很多人跟我買東西要先看我的腳，確定我是真的身障才跟我買，」邱大哥指著他掛在輪椅正前方的牌子，「這就是為什麼我現在要寫這張在前面，就是怕別人誤會。」
+                                    <br>很多人跟我買東西要先看我的腳，確定我是真的身障才跟我買，」邱大哥指著他掛在輪椅正前方的牌子，「這就是為什麼我現在要寫這張在前面，<strong style=" background: rgba(239, 184, 65, 0.5)">就是怕別人誤會</strong>。」
                                     <br>
-                                    <br>出來街賣，就是希望能自立工作，但卻也被迫面對他人同情、可憐的眼光。「不管怎麼講，我能夠自立生活，我不需要別人的同情，」邱大哥提到一次在街賣時遇到過去的老友，卻被用同情的眼光和語氣對待。「這種感覺很不舒服，我認為我不需要。我自己能出來街賣，生活也還過得去嘛，在我還沒站起來之前，任何人我都不會找。大概也是心裡的檻過不了吧。」
+                                    <br>出來街賣，就是希望能自立工作，但卻也被迫面對他人同情、可憐的眼光。「不管怎麼講，我能夠自立生活，我不需要別人的同情，」邱大哥提到一次在街賣時遇到過去的老友，卻被用同情的眼光和語氣對待。「這種感覺很不舒服，我認為我不需要。我自己能出來街賣，生活也還過得去嘛，<strong style=" background: rgba(239, 184, 65, 0.5)">在我還沒站起來之前，任何人我都不會找。</strong>大概也是心裡的檻過不了吧。」
                                     <br>
                                     <br>邱大哥一天街賣工時約８小時，中間約休息一小時。然而對身障者而言，長時間工作對身體的負擔其實相當大。「連續賣八小時會很累，尤其我脊椎損傷，下半身血液循環不好。幸好我手臂的力量夠，休息時就能用手撐起身體，幫助血液循環。」
                                 </p>
@@ -409,16 +427,16 @@
                                 <p>
                                     <br>被問到目前在法規、政策，或社福制度上還能如何改善，邱大哥認為依對象的不同，可以分兩個面向討論：
                                     <br>
-                                    <br>「第一，很多身障者其實屬於重症，無法自立生活，甚至是意識不清。我認為政府照顧的不夠多，因為要照顧這些身心障礙者，對家人在精神、人力及財力上都是很沉重的負擔。我認為政府可以在金額上多補助，給他們一個活下去的機會。」
+                                    <br>「第一，很多身障者其實屬於重症，無法自立生活，甚至是意識不清。我認為政府照顧的不夠多，因為要照顧這些身心障礙者，對家人在精神、人力及財力上都是很沉重的負擔。<br><strong style=" background: rgba(239, 184, 65, 0.5)">我認為政府可以在金額上多補助，給他們一個活下去的機會</strong>。」
                                     <br>
-                                    <br>「第二，對於像我這樣意識清楚的身障者，最重要的就是無障礙設施。很多地方的無障礙設施可以多一點，就像我之前去的庇護工廠就是因為沒有無障礙設施，讓我即使有意願，也根本不可能在那邊工作。」
+                                    <br>「第二，對於像我這樣意識清楚的身障者，<br><strong style=" background: rgba(239, 184, 65, 0.5)">最重要的就是無障礙設施。很多地方的無障礙設施可以多一點</strong>，就像我之前去的庇護工廠就是因為沒有無障礙設施，讓我即使有意願，也根本不可能在那邊工作。」
                                 </p>
                             </div>
                         </div>
                         <div id="story-img" class="col-1" style="height:100vh; background-color: #DFCF9D; background-image: url(asset-final/story8.png)">
                             <div id="ch2-content-panel" class="panel panel-default" style="color: black; margin-top:15vh; margin-left: 10vh; width: 40vw; padding: 5vh 5vh">
                                 <p>
-                                    <br>目前依據《身心障礙者權益保障法》（附超連結），各級公私機關都應依法進用一定比例的身障員工。然而實際上，許多企業、機關寧可被政府課收依基本工資計算的「差額補助費」，也不願意聘請身心障礙者。
+                                    <br>目前依據《身心障礙者權益保障法》，各級公私機關都應依法進用一定比例的身障員工。<br><strong style=" background: rgba(239, 184, 65, 0.5)">然而實際上，許多企業、機關寧可被政府課收依基本工資計算的「差額補助費」，也不願意聘請身心障礙者</strong>。
                                     <br>
                                     <br>「請了你來沒有效益嘛，企業本來就是營利導向，沒有必要多花錢還要照顧你。」說起身障者勞動環境的困境，邱大哥忍不住嘆了口氣，「而且像我們這種脊椎損傷要坐輪椅的，公司如果沒有無障礙設施，就算真的願意聘，我們也沒辦法。」
                                 </p>
@@ -439,7 +457,7 @@
                                     <p>
                                         <br>由於種種因素，他和女兒已多年沒有聯絡，終於在今年透過通訊軟體聯繫上。談到女兒最近願意更頻繁的和他傳ＬＩＮＥ，邱大哥笑得瞇起了雙眼，他被冷風吹得微微濕潤的眼眶有些泛紅，眼角也堆疊起思念般細長的魚尾紋。
                                         <br>
-                                        <br>他苦笑著說自己其實只想知道女兒現在過得好不好，「因為，任何一個當父親的人啊，都希望自己的女兒可以幸福快樂。知道她現在過得很好，我真的已經心滿意足。」
+                                        <br>他苦笑著說自己其實只想知道女兒現在過得好不好，<strong style=" background: rgba(239, 184, 65, 0.5)">「因為，任何一個當父親的人啊，都希望自己的女兒可以幸福快樂。知道她現在過得很好，我真的已經心滿意足。」</strong>
                                 </div>
                             </div>
                         </div>
@@ -456,7 +474,7 @@
                         <div id="story-img" class="col-1" style="height:100vh; background-color: #B58E59; background-image: url(asset-final/story12.png)">
                             <div id="ch2-content-panel" class="panel panel-default" style="color: black; margin-top:20vh; margin-left: 90vh; width: 45vw; padding: 5vh 5vh">
                                 <p>
-                                    <br>「第一個，最重要，我掛好了門診，下個月要去看看能不能做神經繞道手術。如果手術可以做，經濟在健保給付的情況下又允許，我希望動完刀有機會可以重新站起來。不用像你們這樣能夠跑跑跳跳，只要能站起來走路就好；」
+                                    <br>「第一個，最重要，我掛好了門診，下個月要去看看能不能做神經繞道手術。如果手術可以做，經濟在健保給付的情況下又允許，我希望動完刀有機會可以重新站起來。不用像你們這樣能夠跑跑跳跳，<strong style=" background: rgba(239, 184, 65, 0.5)">只要能站起來走路就好</strong>；」
                                     <br>
                                     <br>「第二個，希望我女兒可以繼續願意跟我聊天，然後過年期間找個時間陪我出來吃頓飯、聊聊天，這樣就好；」邱大哥輕吐了一口氣，難掩心中面對未來的焦慮的緊張，但他隨即聳聳肩露出微笑。
                                     <br>
@@ -471,14 +489,24 @@
         </div>
 
         <!-- 這邊可以再插ㄍ什麼東西 -->
-
+        <div id="chapter2-end" class="text-center">
+            <div class="container-fluid">
+                <div style="height: 100vh"></div>
+                <div class="container-fluid" style="height: 100vh; padding: 20% 20%">
+                    <h4><small>聽完邱大哥的願望，才發現原來一般人最平淡的日常，也可能是身障者一輩子都無法觸及的想望。</small></h4>
+                    <br><br>
+                    <h4><small>遠望著邱大哥坐著電動輪椅離開的背影，在寒風中似乎有些搖晃，但當他轉頭、笑著向我們揮手道別才終於駛去時，可以確信的是在他動盪波折的生命歷程裡，挫折早已磨圓了他年輕時剛硬倔強的稜角、逆境也淘洗出最澄澈的靈魂底蘊。</small></h4>
+                    <br><br>
+                    <h4><small>也許走過一路風雨，才能嚐得生命最豐富的滋味。</small></h3>
+                </div>
+            </div>
+        </div>
 
 
 
         <!-- chapter3 身障者數據-->
-        <div id="chapter3" class="container-fluid" style="background-color: #5E687E; min-height: 600vh;">
+        <div id="chapter3" class="container-fluid" style="background-color: #5E687E; min-height: 480vh; padding-right: 7vw">
             <!-- chapter3的小廢話 -->
-            <div style="background-color: aliceblue; height: 100vh"></div>
             <div class="container-fluid" style="min-height: 50vh;">
                 <div id="ch-title" class="text-center">
                     <h1><strong>我國身障工作者數據</strong></h1>
@@ -501,8 +529,8 @@
                         </h5>
                     </div>
                 </div>
-                <div class="col-sm-6 slideanimate" style=" padding: 5% 15% 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
-                    <img src="asset-final/label-0.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;">
+                <div id="img" class="col-sm-6 slideanimate" style=" padding-top: 9%;">
+                    <img src="asset-final/label1.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%; box-shadow: 2px 2px 10px black;">
                     <p><small style="text-align: right; color: white">圖一：就業失業依身障類別</small></p>
                 </div>
 
@@ -524,17 +552,17 @@
                         </h5>
                     </div>
                 </div>
-                <div class="col-sm-6 slideanimate" style=" padding: 5% 15% 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
-                    <img src="asset-final/label-0.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;">
+                <div id="img" class="col-sm-6 slideanimate" style=" padding-top: 9%;">
+                    <img src="asset-final/label2.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;box-shadow: 2px 2px 10px black;">
                     <p><small style="text-align: right; color: white">圖二：身心障礙等級</small></p>
                 </div>
 
             </div>
 
-            <div class="row" style="min-height: 100vh; padding: 5% 5%;">
-                <div class="col-sm-6 slideanimate" style=" padding: 5% 15% 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
-                    <img src="asset-final/label-0.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;">
-                    <p><small style="text-align: right; color: white">圖三：文字雲</small></p>
+            <div class="row" style="min-height: 100vh; padding-left: 10%">
+                <div id="img" class="col-sm-6 slideanimate" style=" padding-top: 9%;">
+                    <img src="asset-final/label3.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;box-shadow: 2px 2px 10px black;">
+                    <p><small style="text-align: right; color: white">圖三：未足額進用身心障礙工作者之企業名單</small></p>
                 </div>
                 <div class="col-sm-6">
                     <div id="ch3-lb-content-panel" class="panel panel-default" style="color:white; padding: 20% ">
@@ -553,9 +581,9 @@
                 </div>
             </div>
 
-            <div class="row" style="min-height: 100vh; padding: 5% 5%;">
-                <div class="col-sm-6 slideanimate" style=" padding: 5% 15% 10% 10%; background-color: rgba(232, 235, 239, 0.1);">
-                    <img src="asset-final/label-0.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;">
+            <div class="row" style="min-height: 100vh; padding-left: 10%">
+                <div id="img" class="col-sm-6 slideanimate" style=" padding-top: 9%;">
+                    <img src="asset-final/label3.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;box-shadow: 2px 2px 10px black;">
                     <p><small style="text-align: right; color: white">圖四：台北市身心障礙者歷年致殘成因(已更新12/30 19:30)</small></p>
                 </div>
 
@@ -580,7 +608,7 @@
         <!-- chapter4 結構的牢籠 -->
         <div id="chapter4" class="container-fluid" style="background-color: #5E687E; min-height: 300vh;">
             <div class="container" style="padding-right: 7vw">
-                <div id="ch-title" class="text-center">
+                <div id="ch-title" class="text-center" style="margin-bottom: 25%">
                     <h1><strong>鑲嵌於結構的牢獄——法規、制度，與社會困境</strong></h1>
                 </div>
                 <div id="ch3-content" class="ch3-content text-center">
@@ -596,7 +624,7 @@
                     <br>
                     <br>
                     <br>
-                    <p><strong>雖然法令不斷的朝向基本權益的保障方向修正，一直以來身心障礙者要獲得政府所提供的福利服務，先決條件仍是必須獲得所謂的「身心障礙手冊」。換句話說，有相關需求者都必須先透過鑑定的程序，符合政府所訂定的其中一種身心障礙類別及等級，才能依法申請所需的服務。</strong></p>
+                    <p style=" background: rgba(239, 184, 65, 0.8)"><strong>雖然法令不斷的朝向基本權益的保障方向修正，一直以來身心障礙者要獲得政府所提供的福利服務，先決條件仍是必須獲得所謂的「身心障礙手冊」。換句話說，有相關需求者都必須先透過鑑定的程序，符合政府所訂定的其中一種身心障礙類別及等級，才能依法申請所需的服務。</strong></p>
                     <br>
                     <br>
                     <br>
@@ -608,11 +636,11 @@
                     <br>
                     <br>
                     <br>
-                    <p><strong>當一個社會把障礙者隔離在機構式教養院，或是沒有提供無障礙環境保障礙者參與社會的權利，其實就違反了障礙者的人權。 障礙是流動的，在不同的社會環境、歷史、文化中有不同的認定方式。</strong>
+                    <p><strong style=" background:rgba(239, 184, 65, 0.7)">當一個社會把障礙者隔離在機構式教養院，或是沒有提供無障礙環境保障礙者參與社會的權利，其實就違反了障礙者的人權。 障礙是流動的，在不同的社會環境、歷史、文化中有不同的認定方式。</strong>
                         （張恆豪、顏詩耕，２０１１）身障者的生活困境看似難以觸及和同理，但其實任何人都可能在一夕之間因故面臨身障的風險，因此完善化公共設施的無障礙環境不僅是身障者的權利，更是國家的責任。</p>
                     <br>
                     <br>
-                    <p>綜觀我國目前的道路和公共設施，雖可於都市化發展成熟的直轄市觀察到相對完善的無障礙設施，許多一般城市、鄉鎮的道路、交通運輸等設施都仍讓身障者的行動相當不便。看似渺小的細節，往往可以大幅影響一人的交通安排、路線選擇，甚至是工作機會。<strong>障礙者權利的觀點認為，參與社會生活、擁有一定的生活品質是人權，而不是國家的慈善施捨。</strong>（周月清、朱貽莊，２０１１）我國中央政府應積極設置相關辦法敦促各地方主管機關進行相關評估，檢視無障礙設施的覆蓋率，以確保身障者的權益。</p>
+                    <p>綜觀我國目前的道路和公共設施，雖可於都市化發展成熟的直轄市觀察到相對完善的無障礙設施，許多一般城市、鄉鎮的道路、交通運輸等設施都仍讓身障者的行動相當不便。看似渺小的細節，往往可以大幅影響一人的交通安排、路線選擇，甚至是工作機會。<strong style=" background: rgba(239, 184, 65, 0.7)">障礙者權利的觀點認為，參與社會生活、擁有一定的生活品質是人權，而不是國家的慈善施捨。</strong>（周月清、朱貽莊，２０１１）我國中央政府應積極設置相關辦法敦促各地方主管機關進行相關評估，檢視無障礙設施的覆蓋率，以確保身障者的權益。</p>
                 </div>
 
                 <div id="ch3-content" class="ch3-content text-center" style="color: black">
@@ -628,9 +656,10 @@
                     <br>
                     <br>
                     <br>
-                    <p><strong>然而，障礙應該被理解為人類的差異，而不是缺陷。在這樣的前提下，我們必須釐清障礙者個人權利和家庭需求的差異，以個人權利的角度提供障礙者支持，正視社福資源的分配正義，實踐正常化與普同化的原則。</strong>（周月清、朱貽莊，２０１１）唯有化解社會對身障者的歧視和誤解，才能真正撼動社會結構，促成友善美好的共生環境。</p>
+                    <p><strong style=" background: rgba(239, 184, 65, 0.5)">然而，障礙應該被理解為人類的差異，而不是缺陷。在這樣的前提下，我們必須釐清障礙者個人權利和家庭需求的差異，以個人權利的角度提供障礙者支持，正視社福資源的分配正義，實踐正常化與普同化的原則。</strong>（周月清、朱貽莊，２０１１）唯有化解社會對身障者的歧視和誤解，才能真正撼動社會結構，促成友善美好的共生環境。</p>
                 </div>
             </div>
+            <div style="height: 50vh"></div>
         </div>
 
 
