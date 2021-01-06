@@ -14,66 +14,33 @@
     <style>
         #nav {
             top: 0px;
-            padding: 0 0 0 96vw;
-            width: 3vw;
-            height: 100vh;
-            position: fixed;
+            right: 0vh;
+            width: 7vh;
+            padding-right: 2%;
         }
 
-        .nav {
-            font-size: 14px;
-            height: 20vh;
-            width: 3vw;
-            font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
-            z-index: 1000;
-        }
-
-        .nav ul {
-            margin: 0;
-            padding: 0;
-            border-top: none;
+        #nav a {
             height: 20vh;
             width: 4vw;
-            z-index: 999;
+            background-color: rgba(32, 43, 56, 0.8);
+            overflow-wrap: break-word;
+            border: none;
+            color: #FCECC6;
         }
 
-        .nav li {
-            margin-bottom: 0px;
-            border-bottom: none;
-            background-color: rgba(1, 1, 1, 0.5);
-            border-left: solid 1px white;
-            list-style-type: none;
-            /*    float: left;*/
+        #nav a.active {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #202338;
             width: 4vw;
             height: 20vh;
-            z-index: 99;
         }
 
-        .nav li a {
-            padding: 1px 1px;
-            display: block;
-            width: auto;
-            line-height: 3;
-            border-left: none;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            writing-mode: vertical-lr;
-            height: 20vh;
-            letter-spacing: 3px;
-        }
-
-        .nav li.first a {
-            border-left: none;
-        }
-
-        .nav li a:hover {
+        #nav a:hover {
             color: #D2AF59;
             background-color: white;
             width: 4vw;
             height: 20vh;
         }
-
 
         #ch-title {
             height: 20vh;
@@ -89,7 +56,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-            opacity: 2;
+            opacity: 1;
         }
 
 
@@ -139,7 +106,6 @@
             box-shadow: 2px 2px 10px #1D2D43;
             color: black;
             float: left;
-
         }
 
         #chapter2-end {
@@ -153,7 +119,6 @@
 
         }
 
-
         #chapter3 {
             background: linear-gradient(#394053, #474C5B);
             background: linear-gradient(to bottom, #394053, #474C5B);
@@ -161,7 +126,6 @@
             background: linear-gradient(to top, #474C5B, #394053);
             background: linear-gradient(to bottom, #394053 0%, #474C5B 100%);
         }
-
 
         #ch3-content {
             padding: 5% 20%;
@@ -174,11 +138,8 @@
             background: linear-gradient(to bottom, #464D5D, #252627);
             background: linear-gradient(180deg, #464D5D, #252627);
             background: linear-gradient(to top, #464D5D, #464D5D);
-            background: linear-gradient(to bottom, #464D5D 0%, #252627 100%); 
-
-
+            background: linear-gradient(to bottom, #464D5D 0%, #252627 100%);
         }
-
 
         .slideanimate {
             visibility: hidden;
@@ -215,26 +176,21 @@
                 -webkit-transform: translateY(0%);
             }
         }
-
     </style>
 
     <title>薛西弗斯的化身　被結構詛咒的身障街賣者們</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav" data-offset="0">
     <!-- 置右的navbar選單-->
-    <div id="nav" class="nav">
-        <ul>
-            <li><a href="#intro">前言</a></li>
-            <li><a href="#chapter1">街賣的一天</a></li>
-            <li><a href="#chapter2">關於邱大哥</a></li>
-            <li><a href="#chapter3">身障者數據</a></li>
-            <li><a href="#chapter4">結構的牢籠</a></li>
-        </ul>
+    <div id="nav" class="list-group" style="position:fixed">
+        <a class="list-group-item list-group-item-action" href="#intro">前言</a>
+        <a class="list-group-item list-group-item-action" href="#chapter1">街賣的一天</a>
+        <a class="list-group-item list-group-item-action" href="#chapter2">關於邱大哥</a>
+        <a class="list-group-item list-group-item-action" href="#chapter3">身障者數據</a>
+        <a class="list-group-item list-group-item-action" href="#chapter4">結構的牢籠</a>
     </div>
-
     <div data-spy="scroll" data-target="#nav" data-offset="0">
-
         <!-- opening 首頁主視覺 -->
         <div id="opening" class="jumbotron jumbotron-fluid text-center" style="background-image: url(asset-final/opening-1.jpg); background-color: #1D2D43; background-size: cover; height: 100vh; padding-right:4%">
             <div class="container" style="padding-right: 7vw">
@@ -243,40 +199,22 @@
                 <p class="lead" style="padding-top: : 40px; padding-left: 15px; padding-right: 20px; color: aliceblue">身障者街賣者被忽視的勞權，真正無障礙的社會遙不可及</p>
             </div>
         </div>
-
-        <div id="intro" style="height:300vh;">
+        <!-- 引言 -->
+        <div id="intro" style="height:300vh; background-color: #252627">
             <div style="height:300vh;">
-                <img src="asset-final/intro1.jpg" class="opa img-fluid intro-img" data-seq=1 style="z-index:99;">
-                <img src="asset-final/intro2.jpg" class="opa img-fluid intro-img" data-seq=2 style="z-index:98;">
-                <img src="asset-final/intro3.jpg" class="opa img-fluid intro-img" data-seq=3 style="z-index:97;">
+                <img src="asset-final/intro1.jpg" class="opa img-fluid intro-img" data-seq=2 style="z-index:999;">
+                <img src="asset-final/intro2.jpg" class="opa img-fluid intro-img" data-seq=3 style="z-index:998;">
+                <img src="asset-final/intro3.jpg" class="opa img-fluid intro-img" data-seq=4 style="z-index:997;">
             </div>
         </div>
 
-        <!-- 引言(想拆成兩頁做淡入淡出) -->
-        <div id="intro-2" class="container-fluid" style="background-color: #252627; min-height: 300vh; padding: 30% 20%">
-            <div class="text-center" style="padding-right: 7vw">
-                <div style="padding: 3px 10px; color: aliceblue; margin: 5vh auto">
-                    <h4>
-                        <small>人潮交會、穿梭的街口，往往不難在街口瞥見蜷縮於輪椅上的身影。如果向前走近，便能看見他們在壓低的帽沿底下有些緊張、不自在的神情，視線在人群中的徘徊，尋覓能賣出下一個街賣品的機會。</small>
-                    </h4>
-                </div>
-                <div style="padding: 3px 10px; color: aliceblue; margin: 5vh auto">
-                    <h4>
-                        <small>從火車站到各個捷運出入口，從繁忙的商圈巷弄到閃爍著幽暗霓虹燈的街角，衛生紙、口香糖、牙線棒、刮刮樂是最常見的街賣商品，他們沒有名字，炯炯雙眸卻隱隱透露著最深最重的生命故事。</small>
-                    </h4>
-                </div>
-                <div style="padding: 3px 10px; color: aliceblue; margin: 5vh auto">
-                    <h4>
-                        <small>他們是誰？為何從事著看似難以改變生活品質的工作？他們坐著輪椅滾過了多少漫漫長路、又有多少的苦衷和無奈隱藏、鑲嵌在每份街賣的口香糖之下？</small>
-                    </h4>
-                </div>
+        <div id="intro-2" class="container-fluid" style="background-color: #252627; min-height: 300vh;">
+            <div class="text-center" style="">
+                <img src="asset-final/intro1.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                <img src="asset-final/intro2.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                <img src="asset-final/intro3.jpg" style="height: 100%; width: 100%; object-fit: cover;">
             </div>
         </div>
-
-
-
-        <!-- 這邊可以再插ㄍ什麼東西 -->
-
         <!-- chapter1 街賣的一天 -->
         <div id="chapter1" class="container-fluid" style="background-color: #313E57; min-height: 280vh;padding-right: 7vw">
 
@@ -305,7 +243,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                   <!--<div class="col-sm-4" style="background-color: rgba(49, 62, 87, 0.3)"> -->
+                    <!--<div class="col-sm-4" style="background-color: rgba(49, 62, 87, 0.3)"> -->
                     <div id="ch1-content">
                         <h5>人潮散去收拾商品</h5>
                         <p>20:00後回浮洲協會</p>
@@ -313,7 +251,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row" style="padding-left: 5%;padding-right: 5%; padding-bottom: 15%">
                 <div id="img" class="col-sm-4 slideanimate">
                     <!-- style="background-color: #F7DB98;" -->
@@ -326,8 +263,6 @@
                     <img src="asset-final/day4.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%; box-shadow: 2px 2px 10px #1D2D43;">
                 </div>
             </div>
-
-
             <div class="row" style="padding: 5% 5%">
                 <div id="img" class="col-sm-6 slideanimate" style="padding-top: 0%">
                     <img src="asset-final/day2.JPG" class="img-fluid slideanimate" alt="Responsive image" style="width:100%; box-shadow: 2px 2px 10px #1D2D43;">
@@ -342,8 +277,6 @@
                 </div>
             </div>
         </div>
-
-
         <!-- chapter2關於邱大哥 -->
         <!-- 這邊開始是橫向捲軸ㄉ部分！ -->
         <div id="chapter2" class="container-fluid" style="min-height: 1000vh;">
@@ -500,7 +433,6 @@
                 </div>
             </div>
         </div>
-
         <!-- 這邊可以再插ㄍ什麼東西 -->
         <div id="chapter2-end" class="text-center">
             <div class="container-fluid">
@@ -514,9 +446,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <!-- chapter3 身障者數據-->
         <div id="chapter3" class="container-fluid" style="background-color: ; min-height: 480vh; padding-right: 7vw">
             <!-- chapter3的小廢話 -->
@@ -536,7 +465,7 @@
                             <br><small>如同邱大哥所提到的，許多身障者其實屬於重症，無法自理生活、甚至意識不清，也因此難以工作自力更生；而根據勞動部提供的資料，可發現在多種身心障礙的類別中，以「肢體障礙」者佔最多數，在全台有超過三十六萬人；其中，卻只有約九萬人屬於勞動人口、能像邱大哥一樣憑藉自己的力量工作賺錢，就業比例僅有23%。
                             </small>
                             <br>
-                            <br><small>然而，肢體障礙者卻已經是所有身心障礙者中，具有最高就業比例的族群了，許多例如失智症、多重障礙著族群，甚至連一成的就業比例都不及。
+                            <br><small>然而，肢體障礙者卻已是所有身心障礙者中，具有最高就業比例的族群了，許多例如失智症、多重障礙著族群，甚至連一成的就業比例都不及。
                             </small>
                             <br>
                         </h5>
@@ -552,7 +481,7 @@
             <div class="row" style="min-height: 100vh; padding: 5% 5%;">
                 <div class="col-sm-6">
                     <div id="ch3-lb-content-panel" class="panel panel-default" style="color:white; padding: 20% ">
-                        <h3 style="margin:0 auto; text-align: left; text-shadow: black 0.1em 0.1em 0.2em;"><strong>想要自力更生 卻並不容易</strong></h3>
+                        <h3 style="margin:0 auto; text-align: left; text-shadow: black 0.1em 0.1em 0.2em;"><strong>轉變了級距，卻跨不過現實鴻溝</strong></h3>
                         <h5>
                             <br>
                             <br><small>右圖呈現台灣目前身心障礙族群等級分佈。其中，重度與極重度等級（此兩族群中僅有不到一成的人具有勞動力，得以自力更生）佔了超過四分之一，兩群總計逾三十一萬人。
@@ -599,7 +528,6 @@
                     <img src="asset-final/label4.png" class="img-fluid slideanimate" alt="Responsive image" style="width:100%;box-shadow: 2px 2px 10px black;">
                     <p style="text-align: right; color: white">圖四：台北市身心障礙者歷年致殘成因</p>
                 </div>
-
                 <div class="col-sm-6">
                     <div id="ch3-lb-content-panel" class="panel panel-default" style="color:white; padding: 20% ">
                         <h3 style="margin:0 auto; text-align: left; text-shadow: black 0.1em 0.1em 0.2em;"><strong>逾半數身心障礙者是後天疾病所致</strong></h3>
@@ -616,8 +544,6 @@
                 </div>
             </div>
         </div>
-
-
         <!-- chapter4 結構的牢籠 -->
         <div id="chapter4" class="container-fluid" style="background-color: #252627; min-height: 300vh;">
             <div class="container" style="padding-right: 7vw; padding-top: 3%">
@@ -689,8 +615,6 @@
             </div>
             <div style="height: 70vh"></div>
         </div>
-
-
         <!-- footer -->
         <div id="footer" class="row" style="background-color:black; min-height: 40vh; padding: 10vh 10vw">
             <div class="col-sm-3"></div>
@@ -702,15 +626,13 @@
 
     </div>
 
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script>
+    <!--<script>
         //intro照片刷淡
         $(window).scroll(function() {
             var intro_pos = $("#intro").offset().top; //intro黎最頂多遠
@@ -724,8 +646,25 @@
             });
         });
 
+    </script>-->
+    <script>
+        $(window).scroll(function() {
+            var scrolled = $(document).scrollTop();
+            var scroll = $(window).scrollTop(); //捲動多少
+            var intro_pos = $("#intro").offset().top; //#intro現在的位置
+            var intro_height = $("#intro").height(); //#intro的高度
+            var intro_scrolled = scroll - intro_pos;
+            var winh = $(window).height();
+            if (intro_scrolled > 0 && intro_scrolled < intro_height) {
+                $(".opa").each(function() {
+                    var opRange = $(this).parent().height() / 5;
+                    $(this).css({
+                        "opacity": 0.8 + ($(this).data("seq") * opRange - scrolled) / opRange
+                    });
+                });
+            }
+        });
     </script>
-
     <script>
         //#chapter2 的進度條 statusbar
         $(window).scroll(function() {
@@ -744,10 +683,7 @@
                 });
             }
         });
-
     </script>
-
-
     <script>
         //#chapter2橫向捲軸
         $(window).scroll(function() {
@@ -762,7 +698,6 @@
                 $("#horizontal").css("left", update_left);
             }
         });
-
     </script>
 
     <script>
@@ -779,7 +714,6 @@
                 });
             });
         });
-
     </script>
 
     <script>
@@ -796,18 +730,6 @@
                 });
             });
         });
-
     </script>
 
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+</body></html>
