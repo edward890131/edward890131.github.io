@@ -52,11 +52,13 @@
 
 
         .intro-img {
-            position: fixed;
-            height: 100%;
+/*            position: sticky;*/
+/*            height: 100%;*/
             width: 100%;
             object-fit: cover;
             opacity: 1;
+            position:absolute;
+            
         }
 
 
@@ -201,23 +203,16 @@
         </div>
         <!-- 引言 -->
         <div id="intro" style="height:300vh; background-color: #252627">
-            <div style="height:300vh;">
-                <img src="asset-final/intro1.jpg" class="opa img-fluid intro-img" data-seq=2 style="z-index:999;">
-                <img src="asset-final/intro2.jpg" class="opa img-fluid intro-img" data-seq=3 style="z-index:998;">
-                <img src="asset-final/intro3.jpg" class="opa img-fluid intro-img" data-seq=4 style="z-index:997;">
+            <div class="sticky-top" style="">
+                <img src="asset-final/intro1.jpg" class="opa intro-img" data-seq=2 style="z-index:999;">
+                <img src="asset-final/intro2.jpg" class="opa intro-img" data-seq=3 style="z-index:998;">
+                <img src="asset-final/intro3.jpg" class="opa intro-img" data-seq=4 style="z-index:997;">
             </div>
         </div>
 
-        <div id="intro-2" class="container-fluid" style="background-color: #252627; min-height: 300vh;">
-            <div class="text-center" style="">
-                <img src="asset-final/intro1.jpg" style="height: 100%; width: 100%; object-fit: cover;">
-                <img src="asset-final/intro2.jpg" style="height: 100%; width: 100%; object-fit: cover;">
-                <img src="asset-final/intro3.jpg" style="height: 100%; width: 100%; object-fit: cover;">
-            </div>
-        </div>
         <!-- chapter1 街賣的一天 -->
-        <div id="chapter1" class="container-fluid" style="background-color: #313E57; min-height: 280vh;padding-right: 7vw">
-
+        <div id="chapter1" class="container-fluid" style="background-color: #313E57; min-height: 400vh;padding-right: 7vw">
+            <div style="height: 120vh;"></div>
             <div id="ch-title" class="text-center" style="padding-top: 5%">
                 <h1><strong>街賣的一天</strong></h1>
             </div>
@@ -657,13 +652,15 @@
             var winh = $(window).height();
             if (intro_scrolled > 0 && intro_scrolled < intro_height) {
                 $(".opa").each(function() {
-                    var opRange = $(this).parent().height() / 5;
+                    var opRange = intro_height / 3;
+                    console.log(opRange);
                     $(this).css({
-                        "opacity": 0.8 + ($(this).data("seq") * opRange - scrolled) / opRange
+                        "opacity": 1.2 + ($(this).data("seq") * opRange - scrolled) / opRange
                     });
                 });
             }
         });
+        
     </script>
     <script>
         //#chapter2 的進度條 statusbar
