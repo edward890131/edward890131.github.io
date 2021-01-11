@@ -643,6 +643,7 @@
 
     </script>-->
     <script>
+        //#intro bg淡入淡出
         $(window).scroll(function() {
             var scrolled = $(document).scrollTop();
             var scroll = $(window).scrollTop(); //捲動多少
@@ -655,13 +656,14 @@
                     var opRange = intro_height / 3;
                     console.log(opRange);
                     $(this).css({
-                        "opacity": 1.2 + ($(this).data("seq") * opRange - scrolled) / opRange
+                        "opacity": 0.5 + ($(this).data("seq") * opRange - scrolled) / opRange
                     });
                 });
             }
         });
         
     </script>
+    
     <script>
         //#chapter2 的進度條 statusbar
         $(window).scroll(function() {
